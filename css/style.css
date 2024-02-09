@@ -673,6 +673,129 @@ a {
   border: none;
   border-radius: 50%;
 }
+.footer__top {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__top__content {
+  background: #fff;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 125px 50px 71px;
+}
+.footer__top__title {
+  margin: 0;
+  font-family: Philosopher;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 73px;
+}
+.footer__top__text {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+}
+.footer__top__address {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  gap: 10px;
+}
+.footer__top__number {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  gap: 10px;
+}
+.footer__top__email {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  gap: 10px;
+}
+.footer__top__timetable {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-top: 20px;
+  width: 100%;
+  gap: 10px;
+}
+.timetable {
+  max-width: 150px;
+}
+.footer__top__media {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 39px;
+  gap: 20px;
+}
+.footer__bottom {
+  background: #0b0b0b;
+}
+.footer__bottom__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.footer__bottom__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 30px;
+}
+.footer__bottom__botton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 40px;
+  border-radius: 5px;
+  border: 1px solid #ffc700;
+  background: #0b0b0b;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+.footer__bottom__link {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 @media (max-width: 1000px) {
   .box1 {
     grid-row: 1/2;
@@ -715,6 +838,21 @@ a {
   }
   .chat__box1 {
     display: none;
+  }
+  .reviews__box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__bottom__content {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .footer__bottom__nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer__bottom__logo {
+    order: 2;
   }
 }
 @media (max-width: 600px) {
@@ -765,5 +903,11 @@ a {
 @media (max-width: 400px) {
   .horses__box {
     grid-auto-rows: 650px;
+  }
+  .reviews__box {
+    grid-auto-rows: 350px;
+  }
+  .footer__bottom__nav {
+    flex-direction: column;
   }
 }
